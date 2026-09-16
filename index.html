@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dr. Enas Madkour | Nutrition & Immunity</title>
+
+    <meta
+        name="description"
+        content="Nutrition & Immunity presentation by Dr. Enas Madkour."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+    <header class="header">
+
+        <div class="brand">
+            <div class="brand-mark">+</div>
+
+            <div class="brand-name">
+                <span>MEDICAL</span>
+                <strong>SESSION</strong>
+            </div>
+        </div>
+
+        <div class="header-actions">
+
+            <button
+                class="header-button"
+                id="themeButton"
+                type="button"
+                aria-label="Toggle theme"
+            >
+                <span id="themeIcon">☼</span>
+            </button>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+                aria-label="Open menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MENU OVERLAY
+    ====================================================== -->
+    <div class="overlay" id="menuOverlay"></div>
+
+    <aside class="side-menu" id="sideMenu">
+
+        <div class="menu-top">
+
+            <div>
+                <span class="menu-kicker">EVENT MENU</span>
+                <h2>Explore</h2>
+            </div>
+
+            <button
+                class="close-button"
+                id="closeMenu"
+                type="button"
+                aria-label="Close menu"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="menu-options">
+
+            <!-- Date -->
+            <button
+                class="menu-option"
+                type="button"
+                data-modal="dateModal"
+            >
+                <span class="menu-number">01</span>
+
+                <span class="menu-icon">◷</span>
+
+                <span class="menu-text">
+                    <strong>Date & Time</strong>
+                    <small>Thursday • 17 September • 8:30 PM</small>
+                </span>
+
+                <span class="menu-arrow">→</span>
+            </button>
+
+
+            <!-- Location -->
+            <button
+                class="menu-option"
+                type="button"
+                data-modal="locationModal"
+            >
+                <span class="menu-number">02</span>
+
+                <span class="menu-icon">⌖</span>
+
+                <span class="menu-text">
+                    <strong>Location</strong>
+                    <small>Hilton DoubleTree Hotel</small>
+                </span>
+
+                <span class="menu-arrow">→</span>
+            </button>
+
+
+            <!-- Information -->
+            <button
+                class="menu-option"
+                type="button"
+                data-modal="infoModal"
+            >
+                <span class="menu-number">03</span>
+
+                <span class="menu-icon">i</span>
+
+                <span class="menu-text">
+                    <strong>Session Info</strong>
+                    <small>A small preview of the presentation</small>
+                </span>
+
+                <span class="menu-arrow">→</span>
+            </button>
+
+        </div>
+
+
+        <div class="menu-footer">
+            <strong>Nutrition & Immunity</strong>
+            <span>Dr. Enas Madkour</span>
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+    <main>
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="status-label">
+                    <span class="status-dot"></span>
+                    UPCOMING PRESENTATION
+                </div>
+
+
+                <p class="small-heading">
+                    PRESENTATION
+                </p>
+
+
+                <h1>
+                    Dr. Enas
+                    <span>Madkour</span>
+                </h1>
+
+
+                <div class="divider"></div>
+
+
+                <h2>
+                    Nutrition
+                    <span>&</span>
+                    Immunity
+                </h2>
+
+
+                <p class="hero-description">
+                    Building stronger defenses from the very beginning.
+                </p>
+
+
+                <!-- EVENT DATA -->
+                <div class="event-grid">
+
+                    <div class="event-card">
+                        <span class="event-label">DATE</span>
+                        <strong>Thursday</strong>
+                        <small>17 September 2026</small>
+                    </div>
+
+                    <div class="event-card">
+                        <span class="event-label">TIME</span>
+                        <strong>8:30 PM</strong>
+                        <small>Egypt Time</small>
+                    </div>
+
+                    <div class="event-card">
+                        <span class="event-label">VENUE</span>
+                        <strong>Hilton DoubleTree</strong>
+                        <small>Hotel</small>
+                    </div>
+
+                </div>
+
+
+                <!-- COUNTDOWN -->
+                <div class="countdown-section">
+
+                    <span>THE SESSION BEGINS IN</span>
+
+                    <div class="countdown">
+
+                        <div>
+                            <strong id="days">00</strong>
+                            <small>DAYS</small>
+                        </div>
+
+                        <b>:</b>
+
+                        <div>
+                            <strong id="hours">00</strong>
+                            <small>HOURS</small>
+                        </div>
+
+                        <b>:</b>
+
+                        <div>
+                            <strong id="minutes">00</strong>
+                            <small>MIN</small>
+                        </div>
+
+                        <b>:</b>
+
+                        <div>
+                            <strong id="seconds">00</strong>
+                            <small>SEC</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- STATIC VISUAL -->
+            <div class="hero-visual">
+
+                <div class="visual-circle visual-circle-large"></div>
+                <div class="visual-circle visual-circle-small"></div>
+
+                <div class="shield">
+
+                    <div class="shield-shape">
+                        <span>+</span>
+                    </div>
+
+                </div>
+
+                <div class="visual-card visual-card-top">
+                    <span>NUTRITION</span>
+                    <strong>FEED</strong>
+                </div>
+
+                <div class="visual-card visual-card-bottom">
+                    <span>IMMUNITY</span>
+                    <strong>PROTECT</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DISCOVER
+        ================================================== -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span> A GLIMPSE INSIDE</span>
+
+                <h2>
+                    What You'll
+                    <strong>Discover</strong>
+                </h2>
+
+                <p>
+                    A focused look at the connection between healthy
+                    nutrition and immune development in early life.
+                </p>
+
+            </div>
+
+
+            <div class="discover-grid">
+
+                <article class="discover-card">
+
+                    <span class="number">01</span>
+                    <span class="discover-icon">◈</span>
+
+                    <h3>Early Nutrition</h3>
+
+                    <p>
+                        Why nutrition matters during the earliest stages
+                        of growth and development.
+                    </p>
+
+                </article>
+
+
+                <article class="discover-card">
+
+                    <span class="number">02</span>
+                    <span class="discover-icon">◌</span>
+
+                    <h3>Breastfeeding</h3>
+
+                    <p>
+                        A look at breastfeeding and the developing
+                        immune system.
+                    </p>
+
+                </article>
+
+
+                <article class="discover-card">
+
+                    <span class="number">03</span>
+                    <span class="discover-icon">◇</span>
+
+                    <h3>Micronutrients</h3>
+
+                    <p>
+                        Important nutritional elements that support
+                        healthy development.
+                    </p>
+
+                </article>
+
+
+                <article class="discover-card">
+
+                    <span class="number">04</span>
+                    <span class="discover-icon">○</span>
+
+                    <h3>Gut & Immunity</h3>
+
+                    <p>
+                        Exploring the connection between nutrition,
+                        the gut and immune health.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SESSION TEASER
+        ================================================== -->
+        <section class="section">
+
+            <div class="teaser">
+
+                <div>
+                    <span class="section-kicker">
+                        BEFORE WE BEGIN
+                    </span>
+
+                    <h2>
+                        More than
+                        <strong>just nutrition.</strong>
+                    </h2>
+                </div>
+
+                <div>
+
+                    <p>
+                        A practical pediatric perspective on how healthy
+                        feeding, early-life nutrition and immune
+                        development come together.
+                    </p>
+
+                    <div class="tags">
+                        <span>HEALTH</span>
+                        <span>GROWTH</span>
+                        <span>IMMUNITY</span>
+                        <span>NUTRITION</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SHARE
+        ================================================== -->
+        <section class="share-section">
+
+            <span class="section-kicker">
+                STAY CONNECTED
+            </span>
+
+            <h2>
+                Share the
+                <strong>event.</strong>
+            </h2>
+
+            <p>
+                Invite someone who would enjoy discovering more about
+                nutrition and immunity.
+            </p>
+
+            <button
+                class="share-button"
+                id="shareButton"
+                type="button"
+            >
+                Share Event
+                <span>→</span>
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         MODALS
+    ====================================================== -->
+    <div class="modal-layer" id="modalLayer">
+
+        <!-- DATE -->
+        <div class="modal" id="dateModal">
+
+            <button
+                class="modal-close"
+                type="button"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <span class="modal-kicker">
+                DATE & TIME
+            </span>
+
+            <h2>Thursday</h2>
+
+            <div class="date-big">
+                17
+                <span>SEP</span>
+                2026
+            </div>
+
+            <div class="time-big">
+                8:30 <span>PM</span>
+            </div>
+
+            <p>
+                Join us for an engaging session focused on
+                Nutrition & Immunity.
+            </p>
+
+        </div>
+
+
+        <!-- LOCATION -->
+        <div class="modal" id="locationModal">
+
+            <button
+                class="modal-close"
+                type="button"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <span class="modal-kicker">
+                VENUE
+            </span>
+
+            <h2>
+                Hilton DoubleTree Hotel
+            </h2>
+
+            <p>
+                View the venue location on Google Maps.
+            </p>
+
+            <div class="map-preview">
+
+                <div class="map-line line-one"></div>
+                <div class="map-line line-two"></div>
+                <div class="map-line line-three"></div>
+
+                <div class="map-pin">
+                    ⌖
+                </div>
+
+                <span>
+                    Hilton DoubleTree Hotel
+                </span>
+
+            </div>
+
+            <a
+                class="location-link"
+                href="https://maps.app.goo.gl/KZxcx1qPXvSL6pmE6?g_st=ic"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open in Google Maps ↗
+            </a>
+
+        </div>
+
+
+        <!-- INFO -->
+        <div class="modal" id="infoModal">
+
+            <button
+                class="modal-close"
+                type="button"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <span class="modal-kicker">
+                SESSION INFO
+            </span>
+
+            <h2>
+                Nutrition & Immunity
+            </h2>
+
+            <p>
+                An engaging pediatric session exploring how healthy
+                nutrition can support growth, development and immune
+                health from early life.
+            </p>
+
+            <div class="info-list">
+
+                <div>
+                    <strong>01</strong>
+                    <span>Early-life nutrition</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Breastfeeding & feeding</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Micronutrients & immunity</span>
+                </div>
+
+                <div>
+                    <strong>04</strong>
+                    <span>Gut–immune connection</span>
+                </div>
+
+            </div>
+
+            <div class="info-note">
+                The full discussion begins during the presentation.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+    <div class="toast" id="toast">
+        <span>✓</span>
+        <p id="toastMessage">Done</p>
+    </div>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="footer">
+
+        <div>
+            <strong>Nutrition & Immunity</strong>
+            <span>Dr. Enas Madkour</span>
+        </div>
+
+        <span>
+            17 September 2026 • 8:30 PM
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
